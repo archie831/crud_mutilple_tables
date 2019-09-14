@@ -1,0 +1,68 @@
+
+body{
+    width: 85%;
+    margin: auto;
+}
+
+.btn-primary{
+    margin-right: 25px;
+    color: white;
+}
+
+.btn-dark{
+    margin-top: 10px !important;
+    margin-right: 20px;
+}
+
+.topbtn{
+    margin-right: 20px;
+}
+
+.fa-home{       
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.fa-trash-alt, .fa-edit, .fa-user, .fa-box-open, .fa-cart-plus, .fa-dollar-sign, .fa-arrow-circle-left{
+    margin-right: 5px;
+} 
+
+.noBreak{
+    white-space: nowrap;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color: white
+}
+
+th, .table td{
+    text-align: center;
+}
+
+.displayErr{
+    color: red !important;
+}
+
+.orderTitle, #editModalTitle{
+    color: #007bff !important;
+}
+
+.delModalTitle{
+    color: red !important;
+}
+
+.success{
+    color: #007bff;
+    text-align: center;
+    margin-top:15%;
+}
+
+.viewResult{
+    text-align: center;
+    color: black !important;
+}

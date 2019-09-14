@@ -1,0 +1,194 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-sm-5 offset-sm-7 cartCol">
+    <div class="d-flex flex-row justify-content-end">
+      <div class="p-2">
+        <div class="cartText">Your cart</div>
+      </div>
+      <div class="p-2">
+      
+        <div id="ex4">
+          <span id="cartNum" class="p1 fa-stack fa-2x has-badge" data-count="0">
+            <!-- Cart Button trigger modal -->
+            <a id="btn-cart" href="#" data-toggle="modal" data-target="#cart-modal-center">
+              <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
+            </a>
+
+            <!-- Cart Modal -->
+            <div class="modal fade" id="cart-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Your cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="show-local-storage"></div>
+                    <div id="show-scount"></div>
+                    <div id="show-crf"></div>
+                    <div id="show-g400c"></div>
+                    <div id="show-ghost"></div>
+                    <div id="show-mesarati"></div>
+                    <div id="show-kawasaki"></div>
+                    <div id="show-pico"></div>
+                    <div id="show-yamaha"></div>
+                    <div id="show-cbr"></div>
+                    <div id="show-total"></div>
+                  </div>
+                  <div class="modal-footer">
+                  <button id="clearStorage" type="button" class="btn btn-secondary" data-dismiss="modal"><i class="material-icons reset-order">delete</i>Reset Order</button>	
+                  <button id="btn-buyNow" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<button type=\"button\" class=\"btn btn-danger\" data-target=\"#del$row[pId]\" data-toggle=\"modal\"><i class='fas fa-trash-alt'></i>Delete</button></td>"
+
+
+
+
+
+
+
+echo "<div class=\"modal fade\" id=\"del$row[pId]\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">
+  <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">
+    <div class=\"modal-content\">
+      <div class=\"modal-header\">
+        <h5 class=\"modal-title\" id=\"delModalTitle\">Delete Product</h5>
+        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+          <span aria-hidden=\"true\">&times;</span>
+        </button>
+      </div>
+      <div class=\"modal-content\">
+        <div class=\"modal-body\">
+          Are you sure you want to delete Product ID $row[pId]? <h5>$row[pName]</h5>
+        </div>
+        <div class=\"modal-footer\">
+          <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>
+          <a href=\"delusers.php?id=$row[pId]\"><button type=\"submit\" class=\"btn btn-danger\" id=\"submit\"><i class='fas fa-trash-alt'></i>Delete</button></a>
+        </div>
+      </div>
+    </div>	
+  </div>
+</div>";
+
+
+
+
+echo "<div class=\"modal fade\" id=\"del$row[pId]\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">
+  <div class=\"modal-dialog\" role=\"document\">
+  <div class=\"modal-content\">
+    <div class=\"modal-header\">
+    <h5 class=\"modal-title\" id=\"exampleModalLabel\">Modal title</h5>
+    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">
+      <span aria-hidden=\"true\">&times;</span>
+    </button>
+    </div>
+    <div class=\"modal-body\">
+    ...
+    </div>
+    <div class=\"modal-footer\">
+    <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>
+    <button type=\"button\" class=\"btn btn-primary\">Save changes</button>
+    </div>
+  </div>
+  </div>
+</div>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
